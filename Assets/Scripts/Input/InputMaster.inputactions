@@ -1,0 +1,269 @@
+{
+    "name": "InputMaster",
+    "maps": [
+        {
+            "name": "Player",
+            "id": "6c457e7a-5177-4f6f-afe3-2eb099b42498",
+            "actions": [
+                {
+                    "name": "LeftPunch",
+                    "type": "Button",
+                    "id": "397ddcde-12fd-43e3-b9a8-080b940917ca",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "RightPunch",
+                    "type": "Button",
+                    "id": "9a0cee5f-ba33-4e07-b4d4-8c45a7714bf3",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Press(behavior=2)"
+                },
+                {
+                    "name": "UpPunch",
+                    "type": "Button",
+                    "id": "09c33157-ce67-4879-8b3a-7e65729e6cb8",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Press(behavior=2)"
+                },
+                {
+                    "name": "Block",
+                    "type": "Value",
+                    "id": "55da29fd-8ec4-4157-b6c6-fc3a8cb0ab76",
+                    "expectedControlType": "Double",
+                    "processors": "",
+                    "interactions": "Hold"
+                },
+                {
+                    "name": "Movement",
+                    "type": "Value",
+                    "id": "6b51c658-fb76-4812-a2bd-65568642cfcc",
+                    "expectedControlType": "Double",
+                    "processors": "",
+                    "interactions": "Press(behavior=2)"
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "e5b154ef-0adc-4ce2-9958-d8f60c5b55d6",
+                    "path": "<Keyboard>/g",
+                    "interactions": "Press",
+                    "processors": "",
+                    "groups": "Keyboard and mouse",
+                    "action": "LeftPunch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f4df0dcb-fe39-4794-b360-429f8e10fb10",
+                    "path": "<Gamepad>/buttonWest",
+                    "interactions": "Press",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "LeftPunch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "adKeys",
+                    "id": "73dc873f-f2c2-47bc-8406-5e0e49dc4e0c",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Movement",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "74747a63-0a5c-48e0-96a2-4bcdc05dd58a",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard and mouse",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "5ea97bfc-e08f-46f8-831c-71b950322098",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard and mouse",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "arrowKeys",
+                    "id": "3916bc70-dd86-4bce-99b3-38d6d4eddf0f",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Movement",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "41c11789-2d52-4571-a755-905ac1b5b758",
+                    "path": "<Keyboard>/leftArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard and mouse",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "3e0e79fc-c61c-4fb2-8006-fde90567b76b",
+                    "path": "<Keyboard>/rightArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard and mouse",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "leftStick",
+                    "id": "cf2cea80-d865-42c2-9a9f-f039b746569f",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Movement",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "Negative",
+                    "id": "750d80b4-4a6b-43dd-a06b-75e8548b0095",
+                    "path": "<Gamepad>/leftStick/left",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Positive",
+                    "id": "20ddd2c0-0049-4dcc-bc0e-c778310650ca",
+                    "path": "<Gamepad>/leftStick/right",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "b5266dc7-b3f1-4be9-8bec-35fe5e308989",
+                    "path": "<Keyboard>/j",
+                    "interactions": "Press",
+                    "processors": "",
+                    "groups": "Keyboard and mouse",
+                    "action": "RightPunch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "23cc3089-816c-4faf-b282-bc6eb1561e24",
+                    "path": "<Gamepad>/buttonEast",
+                    "interactions": "Press",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "RightPunch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b7fdbb1d-a298-44e6-b7e0-ecd2847267dd",
+                    "path": "<Keyboard>/y",
+                    "interactions": "Press",
+                    "processors": "",
+                    "groups": "Keyboard and mouse",
+                    "action": "UpPunch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "53a5deb3-c805-4e71-88f1-e785db07818c",
+                    "path": "<Gamepad>/buttonNorth",
+                    "interactions": "Press",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "UpPunch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "496646c5-c375-4c5b-b71a-c98c14b2a1fe",
+                    "path": "<Keyboard>/space",
+                    "interactions": "Press",
+                    "processors": "",
+                    "groups": "Keyboard and mouse",
+                    "action": "Block",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b86cd871-69df-455a-a6eb-ff2a7e16bed0",
+                    "path": "<Gamepad>/buttonSouth",
+                    "interactions": "Press",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "Block",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "Keyboard and mouse",
+            "bindingGroup": "Keyboard and mouse",
+            "devices": [
+                {
+                    "devicePath": "<Keyboard>",
+                    "isOptional": false,
+                    "isOR": false
+                },
+                {
+                    "devicePath": "<Mouse>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        },
+        {
+            "name": "Gamepad",
+            "bindingGroup": "Gamepad",
+            "devices": [
+                {
+                    "devicePath": "<Gamepad>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
+}
