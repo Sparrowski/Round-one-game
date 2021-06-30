@@ -26,6 +26,8 @@ public class PlayerState : MonoBehaviour {
     [HideInInspector] public bool isAttacking = false;
     [HideInInspector] public bool canAttack = true;
 
+    [HideInInspector] public bool isKoed = false;
+
     private void Start() {
         currentHealth = maxHealth;
         healthBar.setMax(maxHealth);
@@ -36,6 +38,8 @@ public class PlayerState : MonoBehaviour {
         currentCritical = 0;
         criticalBar.setMax(maxCritical);
         criticalBar.setValue(currentCritical);
+
+        isKoed = false;
     }
 
     public void TakeDamage(int damage){
@@ -45,6 +49,7 @@ public class PlayerState : MonoBehaviour {
         if(currentHealth <= 0){
             currentHealth = 0;
             animator.SetBool("KOED", true);
+            isKoed = true;
         }
     
     }
